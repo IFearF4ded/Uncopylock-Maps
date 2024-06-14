@@ -1,1 +1,5 @@
-https://github.com/quivings/Solara/blob/main/Files/SolaraB.zip
+game:GetService("RunService").Heartbeat:Connect(function()
+    while task.wait() do
+        game.ReplicatedStorage.Events.Spin:InvokeServer()
+    end
+end)
