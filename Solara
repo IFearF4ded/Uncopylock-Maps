@@ -681,6 +681,12 @@ end
 coroutine.wrap(LEJMV_fake_script)()
 local function KTKB_fake_script() -- Login.LocalScript 
 	local script = Instance.new('LocalScript', Login)
+
+	if Login.Visible == false then
+		Login.Visible = true
+	end
+	
+	Login.Visible = true
 	
 	local keys = {
 		'wx4ThpAsmwwx4ThpAsmw',
