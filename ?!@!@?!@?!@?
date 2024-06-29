@@ -1,0 +1,145 @@
+local ScriptHub = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local InfiniteYield = Instance.new("TextButton")
+local UIListLayout = Instance.new("UIListLayout")
+local DarkDex = Instance.new("TextButton")
+local DriveWorld = Instance.new("TextButton")
+local Camlock = Instance.new("TextButton")
+
+--Properties:
+
+ScriptHub.Name = "ScriptHub"
+ScriptHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScriptHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScriptHub
+MainFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.202774808, 0, 0.206039071, 0)
+MainFrame.Size = UDim2.new(0, 556, 0, 330)
+
+Title.Name = "Title"
+Title.Parent = MainFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(1, 0, 0.138763204, 0)
+Title.Font = Enum.Font.GothamBold
+Title.Text = "Crim.Corn script hub"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+UITextSizeConstraint.Parent = Title
+UITextSizeConstraint.MaxTextSize = 92
+
+ScrollingFrame.Parent = MainFrame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.0125899278, 0, 0.13636364, 0)
+ScrollingFrame.Size = UDim2.new(0, 542, 0, 278)
+
+InfiniteYield.Name = "InfiniteYield"
+InfiniteYield.Parent = ScrollingFrame
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(126, 126, 126)
+InfiniteYield.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteYield.BorderSizePixel = 0
+InfiniteYield.Position = UDim2.new(0.0221402217, 0, 0.0705968216, 0)
+InfiniteYield.Size = UDim2.new(0, 518, 0, 50)
+InfiniteYield.Font = Enum.Font.GothamBold
+InfiniteYield.Text = "Infinite Yield"
+InfiniteYield.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteYield.TextScaled = true
+InfiniteYield.TextSize = 14.000
+InfiniteYield.TextWrapped = true
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 4)
+
+DarkDex.Name = "DarkDex"
+DarkDex.Parent = ScrollingFrame
+DarkDex.BackgroundColor3 = Color3.fromRGB(126, 126, 126)
+DarkDex.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DarkDex.BorderSizePixel = 0
+DarkDex.Position = UDim2.new(0.0221402217, 0, 0.0705968216, 0)
+DarkDex.Size = UDim2.new(0, 518, 0, 50)
+DarkDex.Font = Enum.Font.GothamBold
+DarkDex.Text = "Dark Dex"
+DarkDex.TextColor3 = Color3.fromRGB(255, 255, 255)
+DarkDex.TextScaled = true
+DarkDex.TextSize = 14.000
+DarkDex.TextWrapped = true
+
+DriveWorld.Name = "DriveWorld"
+DriveWorld.Parent = ScrollingFrame
+DriveWorld.BackgroundColor3 = Color3.fromRGB(126, 126, 126)
+DriveWorld.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DriveWorld.BorderSizePixel = 0
+DriveWorld.Position = UDim2.new(0.0221402217, 0, 0.0705968216, 0)
+DriveWorld.Size = UDim2.new(0, 518, 0, 50)
+DriveWorld.Font = Enum.Font.GothamBold
+DriveWorld.Text = "Drive World"
+DriveWorld.TextColor3 = Color3.fromRGB(255, 255, 255)
+DriveWorld.TextScaled = true
+DriveWorld.TextSize = 14.000
+DriveWorld.TextWrapped = true
+
+Camlock.Name = "Camlock"
+Camlock.Parent = ScrollingFrame
+Camlock.BackgroundColor3 = Color3.fromRGB(126, 126, 126)
+Camlock.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Camlock.BorderSizePixel = 0
+Camlock.Position = UDim2.new(0.0221402217, 0, 0.0705968216, 0)
+Camlock.Size = UDim2.new(0, 518, 0, 50)
+Camlock.Font = Enum.Font.GothamBold
+Camlock.Text = "Camlock"
+Camlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+Camlock.TextScaled = true
+Camlock.TextSize = 14.000
+Camlock.TextWrapped = true
+
+-- Scripts:
+
+local function QRYWNJ_fake_script() -- InfiniteYield.LocalScript 
+	local script = Instance.new('LocalScript', InfiniteYield)
+
+	InfiniteYield.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+end
+coroutine.wrap(QRYWNJ_fake_script)()
+local function HIGFUKZ_fake_script() -- DarkDex.LocalScript 
+	local script = Instance.new('LocalScript', DarkDex)
+
+	DarkDex.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Shadow-Developer/Shadow/master/Scripts/DarkDexExplorer.lua"))()
+	end)
+end
+coroutine.wrap(HIGFUKZ_fake_script)()
+local function ETIY_fake_script() -- DriveWorld.LocalScript 
+	local script = Instance.new('LocalScript', DriveWorld)
+
+	DriveWorld.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/IFearF4ded/Uncopylock-Maps/main/Drive%20World%20Script'))()
+	end)
+end
+coroutine.wrap(ETIY_fake_script)()
+local function EHQTUJ_fake_script() -- Camlock.LocalScript 
+	local script = Instance.new('LocalScript', Camlock)
+
+	Camlock.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/IFearF4ded/Uncopylock-Maps/main/Lock'))()
+	end)
+end
+coroutine.wrap(EHQTUJ_fake_script)()
